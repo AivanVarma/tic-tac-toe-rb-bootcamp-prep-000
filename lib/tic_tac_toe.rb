@@ -91,7 +91,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if draw?(board) || full?(board) || won?(board).kind_of?(Array)
+  if draw?(board) || full?(board) || won?(board)
     TRUE
   else
     FALSE
