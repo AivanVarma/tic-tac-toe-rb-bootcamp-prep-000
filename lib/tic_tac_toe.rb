@@ -45,6 +45,10 @@ def turn(board)
   end
 end
 
+def turn_count(board)
+  board.each
+end
+
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     position_1 = board[win_combination[0]]
