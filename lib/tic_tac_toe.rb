@@ -110,6 +110,12 @@ end
 
 def play
   while !over?(board) do
-    
+    turn(board)
+  end
+  
+  if won?(board)
+    puts "Goncratulations #{winner(board}!"
+  else
+    "Game was a draw!"
   end
 end
