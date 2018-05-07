@@ -111,11 +111,10 @@ end
 def play(board)
   while !over?(board) do
     turn(board)
-  end
-  
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
-  else
-    puts "Cat's Game!"
+    if won?(board)
+      puts "Congratulations #{winner(board)}!"
+    else
+        puts "Cat's Game!"
+    end
   end
 end
