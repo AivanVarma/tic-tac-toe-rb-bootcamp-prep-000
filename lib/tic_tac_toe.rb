@@ -57,9 +57,9 @@ end
 
 def current_player(board)
   if turn_count(board).odd?
-    "X"
+    return "X"
   else
-    "O"
+    return "O"
   end
 end
 
