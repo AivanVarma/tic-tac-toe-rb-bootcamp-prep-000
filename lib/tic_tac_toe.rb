@@ -46,7 +46,12 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.each
+  count = 0
+  board.each_index do |index|
+    if position_taken?(board, index)
+      count += 1
+    end
+  end
 end
 
 def won?(board)
